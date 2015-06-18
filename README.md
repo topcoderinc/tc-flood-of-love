@@ -1,6 +1,7 @@
 # Site Prototype
 
 #### Build Status: ![build status](https://magnum-ci.com/status/e73e32a189c31cff8b6cd3421a73d6dd.png)
+#### Demo Site: [live on heroku](http://prototype-site-shell.herokuapp.com)
 
 ### To set up:
 - put your HTML content under the public folder. Be sure to have an index page.
