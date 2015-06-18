@@ -2,14 +2,20 @@
 
 #### Build Status: ![build status](https://magnum-ci.com/status/e73e32a189c31cff8b6cd3421a73d6dd.png)
 
-To run: 
+### To set up:
+- put your HTML content under the public folder. Be sure to have an index page.
+- for basic auth:
+    + set an environmental variable "SECURESITE=true"
+    + add your user:password combos in the /data/users.httpaswd file
+
+### To run: 
 
 ```
 $ npm install
 $ npm start 
 ```
 
-To set up CI/CD with [Magnum CI](http://magnum-ci.com) & [Heroku](http://heroku.com)
+### To set up CI/CD with [Magnum CI](http://magnum-ci.com) & [Heroku](http://heroku.com)
 - create a heroku app
     + add the Papertrail add-on for good measure.
     + fetch your account's API key/token from your account settings.
