@@ -4,7 +4,7 @@
 #### Demo Site: [live on heroku](http://prototype-site-shell.herokuapp.com)
 
 ### To set up:
-- put your HTML content under the public folder. Be sure to have an index page.
+- put your HTML content under the /public folder. Be sure to have an index page.
 - for basic auth:
     + set an environmental variable "SECURESITE=true"
     + add your user:password combos in the /data/users.httpaswd file
