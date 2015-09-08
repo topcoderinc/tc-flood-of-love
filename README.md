@@ -4,7 +4,8 @@
 #### Demo Site: [live on heroku](http://prototype-site-shell.herokuapp.com)
 
 ### To set up:
-- put your HTML content under the /public folder. Be sure to have an index page.
+- put your HTML content under the /public folder. 
+    + Be sure to have an index page
     + putting content under /public/subs will generate an index that exposes each sub folder as a link. This is especially usefull for dropping prototype challenge results in for demo
 - for basic auth:
     + set an environmental variable "SECURESITE=true"
