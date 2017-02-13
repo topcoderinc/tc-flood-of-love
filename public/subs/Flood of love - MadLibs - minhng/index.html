@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Mad Libs</title>
+    <meta name="description" content="Mad Libs - Flood of Love">
+    <meta name="author" content="Minh Nguyen">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    
+    <!-- FONT AWESOME -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <!-- graphlib js -->
+    <script src="js/graphlib.min.js"></script>
+    
+    <!-- custom CSS & JS -->
+    <link rel="stylesheet" href="css/madlibs.css">    
+    <script src="js/_madlibs_data.js"></script>
+    <script src="js/madlibs.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+    <br/>
+    
+    <center>
+        
+    <form class="form-horizontal" id="madlibs_input">
+    <fieldset>
+
+    <!-- Form Name -->
+    <legend style="color:#ff5e5e;">Mad Libs - Flood of Love</legend>
+        
+    <!-- Select Basic -->
+    <div class="form-group">
+      <label class="col-xs-4 control-label" for="topic" style="color:grey;font-weight:bold;">Topic</label>
+      <div class="col-xs-6">
+        <!--
+        <select id="topic" name="topic" class="form-control">
+          <option value="1">Valentine</option>
+        </select>
+        -->
+        <input type="text" class="form-control input-xs" value="Valentine" readonly>
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-xs-4 control-label" for="name">Your Name</label>  
+      <div class="col-xs-6">
+      <input id="name" name="name" type="text" placeholder="E.g. John" class="form-control input-xs" required="" value="">
+      </div>
+    </div>    
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-xs-4 control-label" for="place">Place</label>  
+      <div class="col-xs-6">
+      <input id="place" name="place" type="text" placeholder="" class="form-control input-xs" required="" value="">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-xs-4 control-label" for="item">Item</label>  
+      <div class="col-xs-6">
+      <input id="item" name="item" type="text" placeholder="" class="form-control input-xs" required="" value="">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-xs-4 control-label" for="time">Time</label>  
+      <div class="col-xs-6">
+      <input id="time" name="time" type="text" placeholder="E.g. 3 AM / 17:00 / ..." class="form-control input-xs" required="" value="">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-xs-4 control-label" for="adverb">Adverb</label>  
+      <div class="col-xs-6">
+      <input id="adverb" name="adverb" type="text" placeholder="" class="form-control input-xs" value="">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-xs-4 control-label" for="number">Number</label>  
+      <div class="col-xs-6">
+      <input id="number" name="number" type="text" placeholder="" class="form-control input-xs" required="" value="">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <!-- Depecated -->
+    <!--
+    <div class="form-group">
+      <label class="col-xs-4 control-label" for="animal">Animal</label>  
+      <div class="col-xs-6">
+      <input id="animal" name="animal" type="text" placeholder="" class="form-control input-xs" value="dog">
+
+      </div>
+    </div>
+    -->
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-xs-4 control-label" for="quote">Interesting Quote</label>  
+      <div class="col-xs-6">
+      <input id="quote" name="quote" type="text" placeholder="" class="form-control input-xs" required="" value="">
+
+      </div>
+    </div>
+        
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-xs-4 control-label" for="submit"></label>
+      <div class="col-xs-6" style="text-align:left;">
+        <button id="submit" name="submit" class="btn btn-success">Complete</button>
+      </div>
+    </div>
+
+    </fieldset>
+    </form> 
+        
+        
+    <div id="madlibs_output" style="width:100%; padding:0px; margin:0px;display:none;">      
+        
+        <legend style="color:#ff5e5e;">Mad Libs - Flood of Love</legend>
+        
+        <div class="row" style="width:100%; padding:0px; margin:0px;">
+            <div class="col-xs-1"></div>
+            <div id="story" style="text-align:left;" class="col-xs-10">
+                <!-- Story will be generated and put here! -->
+            </div>
+        </div>
+
+        <hr/>
+
+        <div>        
+            <button id="back" name="back" class="btn btn-primary" onclick="javascript:hideShowMadLibs(0);"><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></button>
+        </div>        
+    </div>
+        
+    </center>
+    
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

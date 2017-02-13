@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Topcoder Mad Lib</title>
+  <!-- Bootstrap -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .underscore {
+      text-decoration: underline;
+      color: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-center">Topcoder MadLib</h1>
+    <form id="madlib" class="form-horizontal">
+      <div class="form-group">
+        <label for="number" class="col-md-2">A Number</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="number" placeholder="100" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="unit" class="col-md-2">Any Unit</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="unit" placeholder="dollars" required></div>
+      </div>
+      <div class="form-group">
+        <label for="noun1" class="col-md-2">Noun</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="noun1" placeholder="algorithm" required></div>
+      </div>
+      <div class="form-group">
+        <label for="verb1" class="col-md-2">Verb</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="verb1" placeholder="identify" required></div>
+      </div>
+      <div class="form-group">
+        <label for="profession" class="col-md-2">Any profession</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="profession" placeholder="developers" required></div>
+      </div>
+      <div class="form-group">
+        <label for="adjective1" class="col-md-2">Adjective</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="adjective1" placeholder="late" required></div>
+      </div>
+      <div class="form-group">
+        <label for="noun2" class="col-md-2">Another noun</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="noun2" placeholder="cat" required></div>
+      </div>
+      <div class="form-group">
+        <label for="region" class="col-md-2">Any region</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="region" placeholder="world" required></div>
+      </div>
+      <div class="form-group">
+        <label for="adjective2" class="col-md-2">Adjective</label>
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="adjective2" placeholder="better" required></div>
+      </div>
+      <hr>
+      <button class="btn btn-primary" type="submit">Go Mad!</button>
+      <button class="btn btn-danger" type="reset">Reset</button>
+    </form>
+    <div class="well hidden ">
+      <p>On the Valentine's Day, Topcoder announced new challenge series that offered <span class="number underscore">250 </span> <span class="unit underscore">dollars</span> in rewards.</p>
+      <p>The challenge was to develop <span class="noun1 underscore">algorithms</span> that can be used to <span class="verb1 underscore">identify</span>        lonely <span class="profession underscore">developers</span>.</p>
+      <p>Hundreds of lonely <span class="profession underscore">developers</span> signed up to participate in the challenge.</p>
+      <p>It is very easy to identify lonely <span class="profession underscore">developers</span> as their work is very <span class="adjective1 underscore">late</span>.</p>
+      <p>But the winner got <span class="noun2 underscore">cats</span> as his reward instead.</p>
+      <p>In the end, Topcoder eliminated loneliness and made the <span class="region underscore">world</span> a <span class="adjective2 underscore">better</span> place.</p>
+      <button id="refresh" class="btn btn-info">Again</button>
+    </div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="/js/jquery.min.js"></script>
+  <!--Include all compiled plugins (below), or include individual files as needed -->
+  <script src="/js/bootstrap.min.js"></script>
+  <script>
+    $('#madlib').on('submit', function (e) {
+      e.preventDefault();
+      $('.number').text($('#number').val());
+      $('.unit').text($('#unit').val());
+      $('.noun1').text($('#noun1').val());
+      $('.verb1').text($('#verb1').val());
+      $('.region').text($('#region').val());
+
+      $('.profession').text($('#profession').val());
+      $('.adjective1').text($('#adjective1').val());
+      $('.adjective2').text($('#adjective2').val());
+      $('.noun2').text($('#noun2').val())
+      $('#madlib').addClass('hidden');
+      $('.well').removeClass('hidden');
+    });
+
+    $('#refresh').on('click', function (e) {
+      e.preventDefault();
+      $('.well').addClass('hidden');
+      $('#madlib').removeClass('hidden');
+    })
+  </script>
+</body>
+
+</html>

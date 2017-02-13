@@ -1,0 +1,166 @@
+/* Custom Styles */
+
+/* Navbar customization */
+.navbar-custom {
+	background-color: #e66;
+}
+.navbar-custom .navbar-nav li.active a:hover, .navbar-custom .navbar-nav li.active a:focus, .navbar-custom .navbar-nav li.active a:active {
+	background: transparent;
+
+}
+.navbar-custom .navbar-nav li.active a {
+	background: transparent;
+}
+.navbar-custom .navbar-nav li a:hover {
+	color: #fff;
+}
+
+/* Header customization */
+header {
+ 	background-image: url(../img/logo-flood-of-love.png);
+ 	color: #333;
+}
+hr.star-light:after {
+	background-color: #e66;
+}
+
+/* About seciton customization */
+#about {
+	color: #333;
+	background-color: #f6f6f6;
+}
+
+/* Galery section customization */
+#portfolio { padding-bottom: 0px;}
+#portfolio .star-primary {
+	margin-bottom: 80px; 
+}
+.portfolio-item .portfolio-link {
+	height: 200px;
+	background-color: #e66;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	padding: 40px;
+	text-transform: uppercase;
+	overflow: hidden;
+	font-size: 1.5em;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+.portfolio-item .portfolio-link div.title-author-container {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.portfolio-item .portfolio-link div.title-author-container span.author { 
+	position: relative;
+	display: inline-block;
+	font-style: italic;
+	font-size: 12px;
+	font-weight: normal;
+}
+.portfolio-item .portfolio-link div.title-author-container span.author::before { 
+	top: 50%;
+	transform: translateY(-50%);
+	left: -10px;
+	position: absolute;
+	content: '';
+	width: 7px;
+	height: 1px;
+	background-color: #fff;
+}
+.portfolio-item .portfolio-link div.title-author-container span.likes { 
+	text-transform: none;
+	font-size: 12px;
+}
+#portfolio .portfolio-item .portfolio-link .caption {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: transparent;
+}
+
+/* Portfolio modal */
+.portfolio-modal .modal-body h4 { 
+	position: relative; 
+	display: inline-block;
+	font-style: italic;
+}
+.portfolio-modal .modal-body h4::before {
+	top: 50%;
+	transform: translateY(-50%);
+	left: -20px;
+	position: absolute;
+	content: '';
+	width: 15px;
+	height: 3px;
+	background-color: #000;
+}
+.portfolio-modal .modal-body p {
+	text-align: justify;
+}
+.portfolio-modal .modal-body .list-inline.item-details a {
+	padding-left: 20px;
+	font-size: 20px;
+}
+
+/* Inputs Container */
+.inputs-container {
+	padding: 0px 100px;
+}
+.inputs-container .input-block {
+	display: none;
+}
+.inputs-container .input-block:first-child {
+	display: block;
+}
+.inputs-container .btn {
+	margin-top: 80px;
+	padding: 0px 40px;
+	line-height: 40px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.inputs-container .input-block p { 
+	text-align: center; 
+	margin-bottom: -40px;
+}
+.inputs-container label { text-transform: uppercase; }
+.inputs-container .word-value {
+	display: block;
+	padding-top: 20px;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.portfolio-modal .modal-body .results-container {
+	display: none;
+}
+.portfolio-modal .modal-body .results-container > p > span.word {
+	color: #e66;
+	font-weight: 500;
+}
+
+.portfolio-modal .modal-body .results-container .btn.btn-danger {
+	padding: 0px 40px;
+	line-height: 40px;
+	font-size: 20px;
+	text-transform: uppercase;
+	background-color: transparent;
+	color: #e66;
+}
+
+/* Create Form Styles */
+#createForm { display: none; }
+.row.control-group { position: relative; }
+.row.control-group .remove-input {
+	position: absolute;
+	right: -60px;
+	top: 0px;
+	font-size: 30px;
+}
+.floating-label-form-group.controls input[type="text"] {
+	padding-bottom: 25px;
+	padding-top: 10px;
+}

@@ -1,0 +1,80 @@
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+          
+<script type="text/javascript" src="./main.js"> </script>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<h3>Love Letters from a Bored Cowboy</h3>
+<p>Select a story from the menu below. Half of the letter will
+be randomly shown first. After you complete the first half, the second
+half will then appear. I thought the format of the MadLib was 
+not too fun so I added this twist.</p>
+<!-- Dropdown Trigger -->
+<a class='dropdown-button btn' href='#' data-activates='dropdown1'>Select a Story</a>
+
+<!-- Dropdown Structure -->
+<ul id='dropdown1' class='dropdown-content'>
+	<li><a href="#!" onclick="showStory(s1)">That Dusty Desert</a></li>
+	<li class="divider"></li>
+	<li><a href="#!" onclick="showStory(s2)">The Sand Blow Hard</a></li>
+	<li class="divider"></li>
+	<li><a href="#!" onclick="showStory(s3)">The Adventure With You</a></li>
+	<li class="divider"></li>
+	<li><a href="#!" onclick="showStory(s4)">The Div</a></li>
+	<li class="divider"></li>
+	<li><a href="#!" onclick="showStory(s5)">The Conclusion</a></li>
+</ul>
+<div id='currentStory'></div>
+<div style='display:none;'>
+	<div class='story' id='s1' title='That Dusty Desert'>
+		<p>A {adjective} desert, the cowboy {verb}</p>
+		<p>The {noun}, it's unbearable.</p>
+		<p>{transitional_word}, an oasis. For days, {noun} wasn't in sight.</p>
+		<p>The empty view inspired some words.</p>
+		<p>{verb} {preposition}, he wrote to {pronoun}:</p>
+		<p>"Dear Sweetheart, my heart sweat for you,</p>
+		<p>{adjective} as it is, and from afar, I {verb} you"</p>
+	</div>
+	<div class='story' id='s2' title='The Sand Blow Hard'>
+		<p>{name}, being a keyboard hero is {adjective}.</p>
+		<p>For one, {pronoun} {verb} it. For the other,</p>
+		<p>coding is {adjective}. {transitional_word}, it keeps the</p>
+		<p>electricity on. I miss you, and your {noun}.</p>
+		<p>Website design is a {noun} but thinking of</p>
+		<p>your {noun}, I feel better. Sorry, I can't</p>
+		<p>be there this valentine.</p>
+	</div>
+	<div class='story' id='s3' title='The Adventure With You'>
+		<p>Just two days ago, I saw a {noun}. I am not sure if </p>
+		<p>it was fantasy, or {noun}. I think the {adjective} cactus</p>
+		<p>water is {verb} me {adjective}. I thought of {name}, {preposition}</p>
+		<p>over the {noun}. What is so fun about coding? It is like</p>
+		<p>{verb} through dusty storm. I remember us {verb} over night</p>
+		<p>trying to {verb}. Ah the good old days. Have you been coding</p>
+		<p>much?</p>
+	</div>
+	<div class='story' id='s4' title='The Div'>
+		<p>If for each div, we get a divident, we would all be {adjective}.</p>
+		<p>That great {noun} is actually not {adjective}. Some say it </p>
+		<p>takes {noun}, other say it takes {noun}. To me, it is still a </p>
+		<p>mystery. {transitional_word}, what count is the time we spent.</p>
+		<p>Or maybe it is the {noun}. I forgot to tell you, it is a</p>
+		<p>{noun} to have {noun} on your {noun}.</p>
+	</div>
+	<div class='story' id='s5' title='The Conclusion'>
+		<p>Flip-flop {noun}-{noun}. I am only two days away from {adjective}</p>
+		<p>{noun}. It takes a lot to be alone here. The night {noun} is</p>
+		<p>beautiful though. The {noun} you gave me is still {verb} well.</p>
+		<p>But, the {noun} is not though. {transitional_word}, I'll make</p>
+		<p>good that promise I told you.</p>
+	</div>
+</div>
+</body>
+</html>

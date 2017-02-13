@@ -1,0 +1,68 @@
+#story{
+    
+     border: 20px solid transparent;
+     padding: 15px;
+     border-image: url("../images/borflo1.jpg") 15 round;
+     word-spacing: 9px;
+     width: 60%;  
+     line-height:30px; 
+     margin: 15px auto !important;
+}
+p{
+background: #ffffff;
+}
+body{
+background: #7d7d7d;   
+}
+html{
+    background: light-grey;
+}
+label{
+display:block;
+text-align:center;
+}
+label[for="adjective"]{
+    margin-right:6px; 
+}
+label[for="fname"]{
+    margin-right:30px; 
+}
+label[for="mname"]{
+    margin-right:16px; 
+}
+label[for="place"]{
+    margin-left:20px; 
+}
+label[for="verb"]{
+    margin-left:27px; 
+}
+label[for="color"]{
+    margin-left:21px; 
+}
+label[for="thing"]{
+    margin-left:21px; 
+}
+label[for="animalf"]{
+    margin-right:76px; 
+}
+input[type="submit"]{
+  margin-left:45%;
+  margin-right: auto;      
+}
+h1{
+ text-align:center ; 
+ margin: 15px;
+ padding:10px;    
+ background:#22A7F0;
+ color:#ffffff;
+ font-weight:bold;    
+}
+mark{
+    background:yellow;
+}
+.hide{
+ display:none;    
+}
+form{
+margin-top: 45px;    
+}
